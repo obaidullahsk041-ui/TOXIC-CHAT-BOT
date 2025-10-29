@@ -28,13 +28,13 @@ module.exports.run = async function({ api, event }) {
   const { threadID } = event;
   
   const botPrefix = global.config.PREFIX || "/";
-  const botName = global.config.BOTNAME || "𝗦𝗵𝗮𝗵𝗮𝗱𝗮𝘁 𝗖𝗵𝗮𝘁 𝗕𝗼𝘁";
+  const botName = global.config.BOTNAME || "Toxic 𝗖𝗵𝗮𝘁 𝗕𝗼𝘁";
 
  
   if (event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
     await api.changeNickname(`[ ${botPrefix} ] • ${botName}`, threadID, api.getCurrentUserID());
 
-    api.sendMessage("চ্ঁলে্ঁ এ্ঁসে্ঁছি্ঁ 𝐒𝐡𝐚𝐡𝐚𝐝𝐚𝐭 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭 এঁখঁনঁ তোঁমাঁদেঁরঁ সাঁথেঁ আঁড্ডাঁ দিঁবঁ..!", threadID, () => {
+    api.sendMessage("চ্ঁলে্ঁ এ্ঁসে্ঁছি্ঁ Toxix 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭 এঁখঁনঁ তোঁমাঁদেঁরঁ সাঁথেঁ আঁড্ডাঁ দিঁবঁ..!", threadID, () => {
       const randomGifPath = path.join(__dirname, "cache", "randomgif");
       const allFiles = fs.readdirSync(randomGifPath).filter(file =>
         [".mp4", ".jpg", ".png", ".jpeg", ".gif", ".mp3"].some(ext => file.endsWith(ext))
@@ -51,17 +51,8 @@ module.exports.run = async function({ api, event }) {
 𝐓𝐡𝐚𝐧𝐤 𝐲𝐨𝐮 𝐬𝐨 𝐦𝐮𝐜𝐡 𝐟𝐨𝐫 𝐚𝐝𝐝𝐢𝐧𝐠 𝐦𝐞 𝐭𝐨 𝐲𝐨𝐮𝐫 𝐢-𝐠𝐫𝐨𝐮𝐩-🖤🤗
 𝐈 𝐰𝐢𝐥𝐥 𝐚𝐥𝐰𝐚𝐲𝐬 𝐬𝐞𝐫𝐯𝐞 𝐲𝐨𝐮 𝐢𝐧𝐚𝐡𝐚𝐥𝐥𝐚𝐡 🌺❤️
 
-𝐓𝐨 𝐯𝐢𝐞𝐰 𝐚𝐧𝐲 𝐜𝐨𝐦𝐦𝐚𝐧𝐝:
-${botPrefix}Help
-${botPrefix}Info
-${botPrefix}Admin
-
-★ যেকোনো অভিযোগ অথবা হেল্প এর জন্য এডমিন 𝐒𝐡𝐚𝐡𝐚𝐝𝐚𝐭 কে নক করতে পারেন ★
-➤𝐌𝐞𝐬𝐬𝐞𝐧𝐠𝐞𝐫: https://m.me/100001039692046
-➤𝐖𝐡𝐚𝐭𝐬𝐀𝐩𝐩: https://wa.me/100001039692046
-
 ❖⋆═══════════════════════⋆❖
-          𝐁𝐨𝐭 𝐎𝐰𝐧𝐞𝐫 ➢ 𝐒𝐇𝐀𝐇𝐀𝐃𝐀𝐓 𝐒𝐀𝐇𝐔`;
+          𝐁𝐨𝐭 𝐎𝐰𝐧𝐞𝐫 ➢ Obaidulalh Islam`;
 
       if (selected) {
         api.sendMessage({ body: messageBody, attachment: selected }, threadID);
@@ -108,7 +99,7 @@ ${botPrefix}Admin
 
 💌 🌺 𝐖 𝐄 𝐋 𝐂 𝐎 𝐌 𝐄 🌺 💌
 ╭─╼╾─╼🌸╾─╼╾───╮
-   ─꯭─⃝‌‌𝐒𝐡𝐚𝐡𝐚𝐝𝐚𝐭 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭 🌺
+   ─꯭─⃝‌‌Toxic 𝐂𝐡𝐚𝐭 𝐁𝐨𝐭 🌺
 ╰───╼╾─╼🌸╾─╼╾─╯
 
 ❖⋆══════════════════════════⋆❖` : threadData.customJoin;
